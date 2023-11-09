@@ -279,7 +279,6 @@
       cursor: pointer;
   }
 
-  .footer_container {}
 
   .contact_details {
       color: rgb(49, 44, 44);
@@ -322,5 +321,14 @@
     .mobile_menu{
         display: none;
         
+    }
+  }
+  @media screen and (max-width:450px) {
+    footer{
+      font-size: 14px;
+    }
+    .contact_details{
+        display: block;
+        text-align: center;
     }
   }
