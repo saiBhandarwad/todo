@@ -10,8 +10,58 @@
 </head>
 
 <body>
-    <main>
-        <div class="container">
+    <!-- nav for big devices -->
+    <nav class="bigDevices">
+        <ul>
+            <div class="left">
+                <div style="cursor: pointer;" id="todo">TODO</div>
+                <div>ABOUT</div>
+                <div>CONTACT</div>
+                <select name="" id="" class="dropdown">
+                    <option value="linkdin">linkdin</option>
+                    <option value="facebook">facebook</option>
+                    <option value="github">github</option>
+                </select>
+            </div>
+
+            <div class="right">
+                <div style="cursor: pointer;" id="login">LOGIN</div>
+                <div style="cursor: pointer;" id="signup">SIGNUP</div>
+                <div style="cursor: pointer;" id="pageNotFound">404</div>
+                <div class="switch">
+                    <span class="dark active" id="dark">dark</span><span class="light" id="light">light</span>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- mobile menu start -->
+    <nav class="mobile_menu" id="mobileNav">
+        <i class="fa-solid fa-bars" id="mobileMenu"></i>
+    </nav>
+
+    <div class="mobile_menu_items hide_menu" id="mobileMenuItmes">
+        <select name="" id="" class="dropdown">
+            <option value="linkdin">linkdin</option>
+            <option value="facebook">facebook</option>
+            <option value="github">github</option>
+        </select>
+        <div style="cursor: pointer;" id="mobileTodo">TODO</div>
+        <div>ABOUT</div>
+        <div>CONTACT</div>
+        
+        <div style="cursor: pointer;" id="mobileLogin">LOGIN</div>
+            <div style="cursor: pointer;" id="mobileSignup">SIGNUP</div>
+            <div style="cursor: pointer;" id="mobilePageNotFound">404</div>
+            <div class="switch">
+                <span class="dark active" id="mobileDark">dark</span><span class="light" id="mobileLight">light</span>
+            </div>
+    </div>
+
+    <!-- mobile menu end -->
+    <main class="dark_mode" id="main">
+        <!-- TODO -->
+        <div class="todo_container" id="todoContainer">
             <h1>your list is here</h1>
             <input type="text" placeholder="add todos here" id="input"><button id="button">add</button>
             <div class="list" id="list">
@@ -19,7 +69,71 @@
                 </div>
             </div>
         </div>
+        <!-- LOGIN  -->
+        <div class="login_container hide" id="loginContainer">
+            <h1>Login Page</h1>
+            <div class="content">
+                <div class="username">
+                    <label for="">user name</label>
+                    <input type="text">
+                </div>
+                <div class="password">
+                    <label for="">password</label>
+                    <input type="text">
+                </div>
+
+                <div class="forgot_password">forgot password?</div>
+                <button>Login</button>
+                <div class="not_have_account">not have an account?</div>
+            </div>
+        </div>
+        <!-- SIGNUP -->
+        <div class="signup_container hide" id="signupContainer">
+            <h1>Signup Page</h1>
+            <div class="content">
+                <div class="username">
+                    <label for="">user name</label>
+                    <input type="text">
+                </div>
+                <div class="password">
+                    <label for="">password</label>
+                    <input type="text">
+                </div>
+                <div class="password">
+                    <label for="">confirm password</label>
+                    <input type="text">
+                </div>
+
+                <button>Signup</button>
+                <div class="not_have_account">already have an account?</div>
+            </div>
+        </div>
+        <!-- PAGE NOT FOUND -->
+        <div class="page_container hide" id="pageContainer">
+            <!-- <h1 class="page_code_heading">404</h1> -->
+            <img src="./New folder/download (1).png" alt="">
+            <div class="content">
+                <div class="page_message">Ooops!!! The page you are looking for is not found </div>
+                <button id="backToHome">Back To Home</button>
+            </div>
+        </div>
     </main>
+    <footer>
+        <div class="footer_container">
+            <div class="icon_container">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-github"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+            <div style="text-align: center; color: rgb(49, 44, 44);">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni tenetur corrupti deserunt
+            </div>
+            <div class="contact_details">
+                <span><i style="margin: 0 2px;" class="fa-solid fa-phone"></i>+917083985513</span>
+                <span><i style="margin: 0 4px;" class="fa-solid fa-envelope"></i>S333bhandarwad@gmail.com</span>
+            </div>
+        </div>
+    </footer>
     <script src="./script.js"></script>
 </body>
 
