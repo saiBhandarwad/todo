@@ -262,7 +262,7 @@
   }
 
   footer {
-      height: 180px;
+      min-height: 180px;
       background: #2a7d8e;
   }
 
